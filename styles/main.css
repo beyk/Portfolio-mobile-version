@@ -16,7 +16,7 @@ body {
   border-bottom-left-radius: 90px;
 }
 
-section {
+.hero {
   background: url("../images/bg-shapes.png");
   padding-left: 20px;
   background-size: cover;
