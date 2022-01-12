@@ -1,5 +1,5 @@
 body {
-  background-color: #fdfafa;
+  background-color: #E5E5E5;
   align-items: center;
   font-family: Poppins, sans-serif;
 }
@@ -88,4 +88,58 @@ nav {
   text-decoration: none;
   list-style: none;
   padding-left: 0;
+}
+
+/*Start Work Section*/
+
+.work-tonic {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  padding: 40px;
+  background-size: cover;
+  background-color: #fff;
+  border-radius: 20px 20px 20px 20px;
+  height: 552px;
+  width: 327px;
+}
+
+h1 {
+  margin: 0px;
+  height: 0px;
+}
+
+.text-info ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  color: #7A869A;
+}
+
+.text-info ul .client-name {
+list-style: none;
+font-family: Poppins, sans-serif;
+font-style: SemiBold;
+color: #344563;
+}
+
+.work-text {
+  margin: 0px;
+}
+
+.tags button {
+  background: #EBEBFF;
+  color: #6070FF;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.see-proj {
+  width: 124px;
+  height: 48px;
+  background: #fff;
+  color: #396DF2;
+  border-color: #396DF2;
+  border-radius: 10px;
 }
