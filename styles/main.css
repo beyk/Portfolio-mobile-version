@@ -1,0 +1,91 @@
+body {
+  background-color: #fdfafa;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+}
+
+/* container include all other parts */
+.container {
+  background-color: #fff;
+  position: absolute;
+  width: 375px;
+  height: 618px;
+  left: 0;
+  top: 0;
+  margin: 0 500px 0 300px;
+  border-bottom-left-radius: 90px;
+}
+
+section {
+  background: url("../images/bg-shapes.png");
+  padding-left: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 0 0 0 100px;
+  height: 600px;
+}
+
+/* Header include my-logo and menu */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* My logo style */
+.mylogo {
+  position: static;
+  width: 76px;
+  height: 20px;
+  left: 12px;
+  top: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6070ff;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+nav {
+  margin-right: 20px;
+}
+
+/* Hero include  top images, text and bottom images */
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+/* our text */
+.hero-text h1 {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.hero-text {
+  margin-top: 130px;
+  color: #172b4d;
+}
+
+.hero-text a {
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+.hero-socialmedia-icons ul {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  list-style: none;
+  padding-left: 0;
+}
