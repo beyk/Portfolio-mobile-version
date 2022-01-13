@@ -2,7 +2,7 @@
 
 >Portfolio: mobile version skeleton.
 
-I use flex-box, img and image-background to create this.
+I use flex-box, img and image-background and grid to create this.
 
 ![Screenshot](./images/screenshoot.PNG)
 ## Built With
