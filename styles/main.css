@@ -8,6 +8,17 @@ ul {
   padding-left: 1px;
 }
 
+button:hover {
+  background-color: #a9cbe2;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #a9cbe2;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 /* container include all other parts */
 .container {
   background-color: #fff;
@@ -91,6 +102,7 @@ nav {
   list-style: none;
   padding-left: 1px;
   padding-top: 10px;
+  align-items: center;
 }
 
 .hero-socialmedia-icons li {
@@ -98,10 +110,15 @@ nav {
 }
 
 /* Start Work Section */
+.work {
+  display: grid;
+  grid-template-rows: auto;
+}
 
 .work-tonic {
-  display: grid;
-  grid-template-rows: auto auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   padding: 40px;
   background-size: cover;
   background-color: #fff;
@@ -138,8 +155,8 @@ nav {
 }
 
 .see-proj {
-  width: 124px;
-  height: min-content;
+  width: fit-content;
+  height: 48px;
   background: #fff;
   color: #396df2;
   border-color: #396df2;
@@ -150,6 +167,8 @@ nav {
 /* About Me section */
 
 .about-me {
+  display: flex;
+  flex-direction: column;
   background: #fff;
   width: 375px;
   padding: 24px;
