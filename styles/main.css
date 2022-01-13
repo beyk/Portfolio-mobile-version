@@ -6,6 +6,7 @@ body {
 
 ul {
   padding-left: 1px;
+  list-style: none;
 }
 
 button:hover {
