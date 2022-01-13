@@ -4,7 +4,7 @@
 
 I use flex-box, img and image-background to create this.
 
-![Screenshot](./images/screenshot.PNG)
+![Screenshot](./images/screenshoot.PNG)
 ## Built With
 - Html
 - Css
