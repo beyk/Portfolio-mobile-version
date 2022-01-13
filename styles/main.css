@@ -10,14 +10,14 @@ ul {
 }
 
 button:hover {
-  background-color: #6070FF;
+  background-color: #6070ff;
   cursor: pointer;
   color: #fff;
-  box-shadow: 0px 8px 16px 0px #4053FC3D;
+  box-shadow: 0 8px 16px 0 #4053fc3d;
 }
 
 button:active {
-  background-color: #2230D2;
+  background-color: #2230d2;
   color: #fff;
 }
 
