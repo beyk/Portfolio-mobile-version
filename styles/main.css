@@ -1,7 +1,11 @@
 body {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   align-items: center;
   font-family: Poppins, sans-serif;
+}
+
+ul {
+  padding-left: 1px;
 }
 
 /* container include all other parts */
@@ -14,17 +18,6 @@ body {
   top: 0;
   margin: 0 500px 0 300px;
   border-bottom-left-radius: 90px;
-}
-
-.hero {
-  background: url("../images/bg-shapes.png");
-  padding-left: 20px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #fff;
-  margin-bottom: 20px;
-  border-radius: 0 0 0 100px;
-  height: 600px;
 }
 
 /* Header include my-logo and menu */
@@ -59,7 +52,16 @@ nav {
 }
 
 /* Hero include  top images, text and bottom images */
+
 .hero {
+  background: url("../images/bg-shapes.png");
+  padding-left: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 0 0 0 100px;
+  height: 600px;
   display: flex;
   flex-direction: column;
 }
@@ -87,10 +89,15 @@ nav {
   margin-top: 10px;
   text-decoration: none;
   list-style: none;
-  padding-left: 0;
+  padding-left: 1px;
+  padding-top: 10px;
 }
 
-/*Start Work Section*/
+.hero-socialmedia-icons li {
+  padding-right: 10px;
+}
+
+/* Start Work Section */
 
 .work-tonic {
   display: grid;
@@ -107,25 +114,24 @@ nav {
 .text-info ul {
   display: flex;
   justify-content: space-between;
-  padding: 0px;
-  margin: 0px;
-  color: #7A869A;
+  padding: 1px;
+  margin: 1px;
+  color: #7a869a;
 }
 
 .text-info ul .client-name {
-list-style: none;
-font-family: Poppins, sans-serif;
-font-style: SemiBold;
-color: #344563;
+  list-style: none;
+  font-family: Poppins, sans-serif;
+  color: #344563;
 }
 
 .work-text {
-  margin: 0px;
+  margin: 0;
 }
 
 .tags button {
-  background: #EBEBFF;
-  color: #6070FF;
+  background: #ebebff;
+  color: #6070ff;
   border: none;
   border-radius: 10px;
   padding: 10px 10px 10px 10px;
@@ -133,9 +139,54 @@ color: #344563;
 
 .see-proj {
   width: 124px;
-  height: 48px;
+  height: min-content;
   background: #fff;
-  color: #396DF2;
-  border-color: #396DF2;
+  color: #396df2;
+  border-color: #396df2;
+  border-radius: 10px;
+  font-size: 17px;
+}
+
+/* About Me section */
+
+.about-me {
+  background: #fff;
+  width: 375px;
+  padding: 24px;
+  border-top-right-radius: 70px;
+  color: #000;
+}
+
+.about-me-text {
+  padding-top: 90px;
+  color: #344563;
+}
+
+.about-me-text h2 {
+  font-size: 40px;
+  color: #172b4d;
+}
+
+.skills ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.lang-submenu ul {
+  display: block !important;
+  list-style: none;
+  padding-bottom: 5px;
+  color: #253858;
+}
+
+.lang-submenu ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  background-color: #f7f7f9;
+  margin: 10px;
   border-radius: 10px;
 }
