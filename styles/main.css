@@ -1,0 +1,213 @@
+body {
+  background-color: #e5e5e5;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+}
+
+ul {
+  padding-left: 1px;
+  list-style: none;
+}
+
+button:hover {
+  background-color: #6070ff;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0 8px 16px 0 #4053fc3d;
+}
+
+button:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+/* container include all other parts */
+.container {
+  background-color: #fff;
+  position: absolute;
+  width: 375px;
+  height: 618px;
+  left: 0;
+  top: 0;
+  margin: 0 500px 0 300px;
+  border-bottom-left-radius: 90px;
+}
+
+/* Header include my-logo and menu */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* My logo style */
+.mylogo {
+  position: static;
+  width: 76px;
+  height: 20px;
+  left: 12px;
+  top: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6070ff;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+nav {
+  margin-right: 20px;
+}
+
+/* Hero include  top images, text and bottom images */
+
+.hero {
+  background: url("../images/bg-shapes.png");
+  padding-left: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 0 0 0 100px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* our text */
+.hero-text h1 {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.hero-text {
+  margin-top: 130px;
+  color: #172b4d;
+}
+
+.hero-text a {
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+.hero-socialmedia-icons ul {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  list-style: none;
+  padding-left: 1px;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.hero-socialmedia-icons li {
+  padding-right: 10px;
+}
+
+/* Start Work Section */
+.work {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.work-tonic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 40px;
+  background-size: cover;
+  background-color: #fff;
+  border-radius: 20px 20px 20px 20px;
+  height: 552px;
+  width: 327px;
+  margin-bottom: 30px;
+}
+
+.text-info ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 1px;
+  margin: 1px;
+  color: #7a869a;
+}
+
+.text-info ul .client-name {
+  list-style: none;
+  font-family: Poppins, sans-serif;
+  color: #344563;
+}
+
+.work-text {
+  margin: 0;
+}
+
+.tags button {
+  background: #ebebff;
+  color: #6070ff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.see-proj {
+  width: fit-content;
+  height: 48px;
+  background: #fff;
+  color: #396df2;
+  border-color: #396df2;
+  border-radius: 10px;
+  font-size: 17px;
+}
+
+/* About Me section */
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 375px;
+  padding: 24px;
+  border-top-right-radius: 70px;
+  color: #000;
+}
+
+.about-me-text {
+  padding-top: 90px;
+  color: #344563;
+}
+
+.about-me-text h2 {
+  font-size: 40px;
+  color: #172b4d;
+}
+
+.skills ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.lang-submenu ul {
+  display: block !important;
+  list-style: none;
+  padding-bottom: 5px;
+  color: #253858;
+}
+
+.lang-submenu ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  background-color: #f7f7f9;
+  margin: 10px;
+  border-radius: 10px;
+}
