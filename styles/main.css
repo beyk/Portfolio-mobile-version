@@ -286,6 +286,9 @@ form ul li textarea {
 	outline: none;
 	width: 90%;
 	height: 170px;
+	font-family: Poppins;
+	color: #B3BAC5;
+	font-size: 24px;
 }
 
 form ul li textarea:focus {
