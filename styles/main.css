@@ -176,6 +176,7 @@ nav {
   padding: 24px;
   border-top-right-radius: 70px;
   color: #000;
+  min-height:1263px;
 }
 
 .about-me-text {
@@ -210,4 +211,41 @@ nav {
   background-color: #f7f7f9;
   margin: 10px;
   border-radius: 10px;
+}
+
+/* Contact me section */
+.contact-me {
+  min-height: 779px;
+  width: 100%;
+  background: url(../images/contact-form-shapes-mobile.png) 100% 21px no-repeat;
+  background-size: auto 709px;
+  background-color: #6070FF;
+  border-top-left-radius: 100px;
+  margin-top: -150px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.contact-header {
+  margin-top: 103px;
+  text-align: center;
+}
+
+.contact-header h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #FFFFFF;
+}
+
+.contact-header p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #EBEBFF;
+  margin-top: -12px;
+  padding: 10px;
 }
