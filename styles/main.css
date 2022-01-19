@@ -1,5 +1,4 @@
 body {
-  background-color: #e5e5e5;
   align-items: center;
   font-family: Poppins, sans-serif;
 }
@@ -216,19 +215,20 @@ nav {
 /* Contact me section */
 .contact-me {
   min-height: 779px;
+  min-width: 375px;
   width: 100%;
-  background: url(../images/contact-form-shapes-mobile.png) 100% 21px no-repeat;
+  background: url(../images/contact-form-shapes-mobile.png) 100% 45px no-repeat;
   background-size: auto 709px;
   background-color: #6070ff;
   border-top-left-radius: 100px;
-  margin-top: -150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: -160px;
 }
 
 .contact-header {
-  margin-top: 103px;
+  margin-top: 90px;
   text-align: center;
 }
 
@@ -274,11 +274,24 @@ form ul li input:focus {
   border: 2px solid #abc5eb;
 }
 
+form ul li textarea {
+  background: white;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 15px 0;
+  outline: none;
+  width: 93%;
+  height: 140px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  color: #b3bac5;
+  font-size: 15px;
+}
+
 form ul li textarea:focus {
   border: 2px solid #abc5eb;
 }
 
-#submit {
+#submit-btn {
   padding: 12px 16px;
   background: #fff;
   border-radius: 8px;
@@ -292,4 +305,21 @@ form ul li textarea:focus {
   outline: none;
   border: 1px solid #6070ff;
   margin-bottom: 45px;
+}
+
+#submit-btn:hover {
+  background-color: #6070ff;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0 8px 16px 0 #4053fc3d;
+}
+
+#submit-btn:active {
+  background-color: var(--deep-blue);
+  color: var(--white);
+}
+
+#submit-btn:disabled {
+  background-color: var(--white);
+  color: var(--light-gray);
 }
