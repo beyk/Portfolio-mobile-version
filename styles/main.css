@@ -129,6 +129,14 @@ nav {
   margin-bottom: 30px;
 }
 
+.snapshoot {
+  transition: transform 1s linear;
+}
+
+.snapshoot:hover {
+  transform: scale(1.03);
+}
+
 .text-info ul {
   display: flex;
   justify-content: space-between;
