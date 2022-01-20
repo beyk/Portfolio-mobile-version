@@ -20,6 +20,10 @@ button:active {
   color: #fff;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* container include all other parts */
 .container {
   background-color: #fff;
@@ -66,6 +70,10 @@ header {
 
 nav {
   margin-right: 20px;
+}
+
+.desk-nav {
+  display: none;
 }
 
 /* Hero include  top images, text and bottom images */
@@ -342,3 +350,25 @@ form ul li textarea:focus {
   background-color: var(--white);
   color: var(--light-gray);
 }
+
+/* This applies from 600px onwards */
+@media (min-width: 792px){
+
+  .desk-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #hamburger-btn {
+    display: none;
+  }
+
+  .desk-nav li {
+    padding-right: 20px;
+  }
+  .desk-nav li a {
+    color: #344563;
+  }
+
+}
+
