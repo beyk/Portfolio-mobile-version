@@ -256,6 +256,11 @@ nav {
   color: #ebebff;
   margin-top: -12px;
   padding: 10px;
+  transition: transform 3s;
+}
+
+.contact-header p:hover {
+  transform: translateX(10px);
 }
 
 form {
