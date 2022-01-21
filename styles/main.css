@@ -26,13 +26,14 @@ a {
   text-decoration: none;
 }
 
+.desk {
+  display: none;
+}
 /* container include all other parts */
 .container {
   background-color: #fff;
   position: absolute;
-  width: 100%;
   height: 618px;
-  left: 0;
   top: 0;
   border-bottom-left-radius: 90px;
 }
@@ -132,6 +133,10 @@ nav {
   padding-left: 20px;
 }
 
+.work h1 {
+  color: #344563;
+}
+
 .desk-snapshoot {
   display: none;
 }
@@ -148,6 +153,30 @@ nav {
   margin-bottom: 30px;
 }
 
+.tags {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 8px;
+  width: 203px;
+  height: 24px;
+  margin: 20px 0 5px 0;
+}
+
+.tags > li {
+  height: inherit;
+  display: grid;
+  background-color: #ebebff;
+  color: #6070ff;
+  border-radius: 8px;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+}
+
+.tags .desk {
+  display: none;
+}
+
 .snapshoot {
   transition: transform 1s linear;
 }
@@ -158,7 +187,6 @@ nav {
 
 .text-info ul {
   display: flex;
-  justify-content: space-between;
   padding: 1px;
   margin: 1px;
   color: #7a869a;
@@ -168,18 +196,17 @@ nav {
   list-style: none;
   font-family: Poppins, sans-serif;
   color: #344563;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
 }
 
+.text-info ul li {
+  padding-left: 20px;
+  list-style: inside;
+}
 .work-text {
   margin: 0;
-}
-
-.tags button {
-  background: #ebebff;
-  color: #6070ff;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 10px 10px 10px;
 }
 
 .see-proj {
@@ -239,6 +266,18 @@ nav {
   border-radius: 10px;
 }
 
+#lets-connect-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: inline-block;
+  margin-top: 10px;
+  color: #7f8cff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  text-decoration: none;
+}
 /* Contact me section */
 .contact-me {
   min-height: 779px;

@@ -5,6 +5,7 @@
     /* Header of the page */
     .portfo-header {
       margin-bottom: 40px;
+      margin-right: 50px;;
     }
     .desk-nav {
       display: flex;
@@ -43,9 +44,14 @@
     .snapshoot {
         display: none;
     }
+
+    .snapshoot-div {
+        width: 544px;
+        height: 448px;
+    }
     .desk-snapshoot {
         width: 100%;
-        height: 80%;
+        height: 100%;
         padding-top:30px;
         display: block;
     }
@@ -54,7 +60,15 @@
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+        width: 1156px;
+        
     }
+
+    .work h1 {
+        font-size: 40px;
+    line-height: 52px;
+    }
+
     .work-tonic {
         flex-direction: row;
         padding-right: 20px;
@@ -67,10 +81,26 @@
 
     .work-info {
         padding: 30px;
+        width: 50%;
     }
-    .tags{
-        margin-bottom: 40px;
-        margin-top: 40px;
+    .tags {
+        width: 305px;
+        grid-template-columns: auto auto auto auto;
+      }
+    
+    .tags > li {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+      }
+    
+    .tags .desk {
+        display: grid;
+      }
+
+    button {
+        margin: 44px 0;
     }
 
     .text-info{
@@ -82,6 +112,13 @@
     .text-info ul {
         justify-content: unset;
         list-style: unset;
+        font-size: 18px;
+    }
+
+    .text-info ul .client-name {
+        color: #344563;
+        font-weight: 500;
+        line-height: 24px;
     }
 
     .text-info ul li {
@@ -104,13 +141,24 @@
     }
 
     .lang-submenu ul {
-        display: flex;
+        display: grid;
+        width: 414px;
+        height: 144px;
+        padding: 12px;
+        grid-template-columns: 122px 122px 122px;
+        grid-template-rows: auto;
+        grid-column-gap: 12px;
+        position: relative;
     }
 
     .lang-submenu ul li {
-        display: block;
-        width: 122px;
-        height: 120px;
+        display: grid;
+        border-radius: 8px;
+        align-items: center;
+        grid-template-rows: 62px auto;
+        grid-template-columns: auto;
+        gap: 0;
+        margin: 0;
     }
 
     .contact-me {
