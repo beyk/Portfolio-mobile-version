@@ -1,185 +1,185 @@
 
 /* This applies from 600px onwards */
-@media (min-width: 792px){
-
-    /* Header of the page */
-    .portfo-header {
-      margin-bottom: 40px;
-      margin-right: 50px;;
-    }
-    .desk-nav {
-      display: flex;
-      justify-content: space-around;
-    }
-  
-    #hamburger-btn {
-      display: none;
-    }
-  
-    .desk-nav li {
-      padding-right: 20px;
-    }
-    .desk-nav li a {
-      color: #344563;
-    }
-  
-    /* Start hero section */
-    .hero {
-      background-image: url("../images/header-bg-des.svg");
-      margin-bottom: 50px;
-    }
-    .hero-content {
-      margin-top: 5%;
-      margin-left: 18%;
-      margin-right: 15%;
-    }
-    .hero-content h1 {
-      font-size: 48px;
-    }
-  
-    .hero-content p{
-      font-size: 20px;
-    }
-
-    .snapshoot {
-        display: none;
-    }
-
-    .snapshoot-div {
-        width: 544px;
-        height: 448px;
-    }
-    .desk-snapshoot {
-        width: 100%;
-        height: 100%;
-        padding-top:30px;
-        display: block;
-    }
-
-    .work {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        width: 1156px;
-        
-    }
-
-    .work h1 {
-        font-size: 40px;
-    line-height: 52px;
-    }
-
-    .work-tonic {
-        flex-direction: row;
-        padding-right: 20px;
-    }
-
-    .reverse {
-        flex-direction: row-reverse;
-        margin-right: 50px;
-    }
-
-    .work-info {
-        padding: 30px;
-        width: 50%;
-    }
-    .tags {
-        width: 305px;
-        grid-template-columns: auto auto auto auto;
-      }
-    
-    .tags > li {
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 16px;
-        letter-spacing: 0.03em;
-      }
-    
-    .tags .desk {
-        display: grid;
-      }
-
-    button {
-        margin: 44px 0;
-    }
-
-    .text-info{
-        margin-bottom: 40px;
-        margin-top: 40px;
-        
-    }
-
-    .text-info ul {
-        justify-content: unset;
-        list-style: unset;
-        font-size: 18px;
-    }
-
-    .text-info ul .client-name {
-        color: #344563;
-        font-weight: 500;
-        line-height: 24px;
-    }
-
-    .text-info ul li {
-        padding-right: 30px;
-    }
-
-    .about-me {
-        flex-direction: row;
-        min-height: 700px;
-    }
-
-    .about-me-intro {
-        width: 35%;
-        margin-left: 10%;
-    }
-
-    .about-me-nav {
-        margin-left: 5%;
-        width: 40%;
-    }
-
-    .lang-submenu ul {
-        display: grid;
-        width: 414px;
-        height: 144px;
-        padding: 12px;
-        grid-template-columns: 122px 122px 122px;
-        grid-template-rows: auto;
-        grid-column-gap: 12px;
-        position: relative;
-    }
-
-    .lang-submenu ul li {
-        display: grid;
-        border-radius: 8px;
-        align-items: center;
-        grid-template-rows: 62px auto;
-        grid-template-columns: auto;
-        gap: 0;
-        margin: 0;
-    }
-
-    .contact-me {
-        background: url(../images/contact-\ background-des.svg) 100% 45px no-repeat;
-        background-color: #6070ff;
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-    }
-
-    .contact-me-content {
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }
-
-    form ul li textarea {
-        width: 100%;
-    }
-
-    #submit-btn {
-        margin-left: 85px;
-    }
+@media (min-width:  992px) {
+  /* Header of the page */
+  .portfo-header {
+    margin-bottom: 40px;
+    margin-right: 50px;
   }
-  
-  
+
+  .desk-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #hamburger-btn {
+    display: none;
+  }
+
+  .desk-nav li {
+    padding-right: 20px;
+  }
+
+  .desk-nav li a {
+    color: #344563;
+  }
+
+  /* Start hero section */
+  .hero {
+    background-image: url("../images/header-bg-des.svg");
+    margin-bottom: 50px;
+  }
+
+  .hero-content {
+    margin-top: 5%;
+    margin-left: 18%;
+    margin-right: 15%;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-content p {
+    font-size: 20px;
+  }
+
+  .snapshoot {
+    display: none;
+  }
+
+  .snapshoot-div {
+    width: 544px;
+    height: 448px;
+  }
+
+  .desk-snapshoot {
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    display: block;
+  }
+
+  .work {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1156px;
+  }
+
+  .work h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .work-tonic {
+    flex-direction: row;
+    padding-right: 20px;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+    margin-right: 50px;
+  }
+
+  .work-info {
+    padding: 30px;
+    width: 50%;
+  }
+
+  .tags {
+    width: 305px;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .tags > li {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+  }
+
+  .tags .desk {
+    display: grid;
+  }
+
+  button {
+    margin: 44px 0;
+  }
+
+  .text-info {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .text-info ul {
+    justify-content: unset;
+    list-style: unset;
+    font-size: 18px;
+  }
+
+  .text-info ul .client-name {
+    color: #344563;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .text-info ul li {
+    padding-right: 30px;
+  }
+
+  .about-me {
+    flex-direction: row;
+    min-height: 700px;
+  }
+
+  .about-me-intro {
+    width: 35%;
+    margin-left: 10%;
+  }
+
+  .about-me-nav {
+    margin-left: 5%;
+    width: 40%;
+  }
+
+  .lang-submenu ul {
+    display: grid;
+    width: 414px;
+    height: 144px;
+    padding: 12px;
+    grid-template-columns: 122px 122px 122px;
+    grid-template-rows: auto;
+    grid-column-gap: 12px;
+    position: relative;
+  }
+
+  .lang-submenu ul li {
+    display: grid;
+    border-radius: 8px;
+    align-items: center;
+    grid-template-rows: 62px auto;
+    grid-template-columns: auto;
+    gap: 0;
+    margin: 0;
+  }
+
+  .contact-me {
+    background: url(../images/contact-\ background-des.svg) 100% 45px no-repeat;
+    background-color: #6070ff;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  .contact-me-content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  form ul li textarea {
+    width: 100%;
+  }
+
+  #submit-btn {
+    margin-left: 85px;
+  }
+}
