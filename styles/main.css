@@ -1,6 +1,7 @@
 body {
   align-items: center;
   font-family: Poppins, sans-serif;
+  background-color: #E5E5E5;
 }
 
 ul {
@@ -130,6 +131,9 @@ nav {
   padding-left: 20px;
 }
 
+.work-tonic .desk-snapshoot {
+  display: none;
+}
 .work-tonic {
   display: flex;
   flex-direction: column;
@@ -350,25 +354,3 @@ form ul li textarea:focus {
   background-color: var(--white);
   color: var(--light-gray);
 }
-
-/* This applies from 600px onwards */
-@media (min-width: 792px){
-
-  .desk-nav {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  #hamburger-btn {
-    display: none;
-  }
-
-  .desk-nav li {
-    padding-right: 20px;
-  }
-  .desk-nav li a {
-    color: #344563;
-  }
-
-}
-

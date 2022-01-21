@@ -1,0 +1,86 @@
+
+/* This applies from 600px onwards */
+@media (min-width: 792px){
+
+    /* Header of the page */
+    .portfo-header {
+      margin-bottom: 40px;
+    }
+    .desk-nav {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    #hamburger-btn {
+      display: none;
+    }
+  
+    .desk-nav li {
+      padding-right: 20px;
+    }
+    .desk-nav li a {
+      color: #344563;
+    }
+  
+    /* Start hero section */
+    .hero {
+      background-image: url("../images/header-bg-des.svg");
+      margin-bottom: 50px;
+    }
+    .hero-content {
+      margin-top: 5%;
+      margin-left: 18%;
+      margin-right: 15%;
+    }
+    .hero-content h1 {
+      font-size: 48px;
+    }
+  
+    .hero-content p{
+      font-size: 20px;
+    }
+
+    .snapshoot {
+        display: none;
+    }
+    .desk-snapshoot {
+        width: 100%;
+        height: 80%;
+        padding-top:30px;
+    }
+
+    .work {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .work-tonic {
+        flex-direction: row;
+
+    }
+
+    .work-info {
+        padding: 30px;
+    }
+    .tags{
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .text-info{
+        margin-bottom: 40px;
+        margin-top: 40px;
+        
+    }
+
+    .text-info ul {
+        justify-content: unset;
+        list-style: unset;
+    }
+
+    .text-info ul li {
+        padding-right: 30px;
+    }
+  }
+  
+  
