@@ -57,7 +57,12 @@
     }
     .work-tonic {
         flex-direction: row;
+        padding-right: 20px;
+    }
 
+    .reverse {
+        flex-direction: row-reverse;
+        margin-right: 50px;
     }
 
     .work-info {
@@ -85,6 +90,7 @@
 
     .about-me {
         flex-direction: row;
+        min-height: 700px;
     }
 
     .about-me-intro {
@@ -107,6 +113,25 @@
         height: 120px;
     }
 
+    .contact-me {
+        background: url(../images/contact-\ background-des.svg) 100% 45px no-repeat;
+        background-color: #6070ff;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .contact-me-content {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    form ul li textarea {
+        width: 100%;
+    }
+
+    #submit-btn {
+        margin-left: 85px;
+    }
   }
   
   

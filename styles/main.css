@@ -2,6 +2,7 @@ body {
   align-items: center;
   font-family: Poppins, sans-serif;
   background-color: #E5E5E5;
+  overflow-x: hidden;
 }
 
 ul {
@@ -201,7 +202,7 @@ nav {
   padding: 24px;
   border-top-right-radius: 70px;
   color: #000;
-  min-height: 1263px;
+  min-height: 1100px;
 }
 
 .about-me-text {
@@ -250,7 +251,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: -160px;
+  margin-top: -150px;
 }
 
 .contact-header {
