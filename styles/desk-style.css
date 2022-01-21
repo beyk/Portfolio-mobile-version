@@ -47,6 +47,7 @@
         width: 100%;
         height: 80%;
         padding-top:30px;
+        display: block;
     }
 
     .work {
@@ -81,6 +82,31 @@
     .text-info ul li {
         padding-right: 30px;
     }
+
+    .about-me {
+        flex-direction: row;
+    }
+
+    .about-me-intro {
+        width: 35%;
+        margin-left: 10%;
+    }
+
+    .about-me-nav {
+        margin-left: 5%;
+        width: 40%;
+    }
+
+    .lang-submenu ul {
+        display: flex;
+    }
+
+    .lang-submenu ul li {
+        display: block;
+        width: 122px;
+        height: 120px;
+    }
+
   }
   
   

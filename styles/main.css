@@ -131,7 +131,7 @@ nav {
   padding-left: 20px;
 }
 
-.work-tonic .desk-snapshoot {
+.desk-snapshoot {
   display: none;
 }
 .work-tonic {
@@ -222,7 +222,7 @@ nav {
 }
 
 .lang-submenu ul {
-  display: block !important;
+  display: block;
   list-style: none;
   padding-bottom: 5px;
   color: #253858;
