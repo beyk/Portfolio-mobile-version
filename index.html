@@ -5,183 +5,219 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/desk-style.css" />
 		<title>Mobile portfoilo version</title>
 	</head>
 	<body>
 		<div class="container">
+			
 			<header class="portfo-header">
 				<a href="#" class="mylogo"> My Logo</a>
 				<nav class="menu-button" onclick="toggle()">
+					<ul class="desk-nav">
+						<li><a href="#">portfolio</a></li>
+						<li><a href="#">about</a></li>
+						<li><a href="#">contact</a></li>
+					</ul>
 					<img id="hamburger-btn" src="images/ham-btn.png" alt="menu" />
 				</nav>
 			</header>
 			<section class="hero">
-				<div class="hero-text">
-					<h1>I’m Beyk Glad to see you!</h1>
-					<h2> I’m a software developer! </h2>
-					<p>
-						I can help you build a product , feature or website Look through some of my work and
-						experience! If you like what you see and have a project you need coded, don’t hestiate
-						to contact me.
-					</p>
-					<a href="#">LET’S CONNECT</a>
-				</div>
-				<div class="hero-socialmedia-icons">
-					<ul>
-						<li
-							><a href="#"><img src="images/twitter.png" alt="twitter" /></a
-						></li>
-						<li
-							><a href="#"><img src="images/Linkedin_icon.svg" alt="linkdin" /></a
-						></li>
-						<li
-							><a href="#"><img src="images/medium.svg" alt="medium" /></a
-						></li>
-						<li
-							><a href="#"><img src="images/github.svg" alt="github" /></a
-						></li>
-						<li
-							><a href="#"><img src="images/angellist.svg" alt="angellist" /></a
-						></li>
-					</ul>
+				<div class="hero-content">
+					<div class="hero-text">
+						<h1>I’m Beyk 
+							<br/>Glad to see you!</h1>
+						<p>
+							I’m a software developer!, I can help you build a product , feature or website Look through some of my work and
+							experience! If you like what you see and have a project you need coded, don’t hestiate
+							to contact me.
+						</p>
+						<a href="#">LET’S CONNECT</a>
+					</div>
+					<div class="hero-socialmedia-icons">
+						<ul>
+							<li
+								><a href="#"><img src="images/twitter.png" alt="twitter" /></a
+							></li>
+							<li
+								><a href="#"><img src="images/Linkedin_icon.svg" alt="linkdin" /></a
+							></li>
+							<li
+								><a href="#"><img src="images/medium.svg" alt="medium" /></a
+							></li>
+							<li
+								><a href="#"><img src="images/github.svg" alt="github" /></a
+							></li>
+							<li
+								><a href="#"><img src="images/angellist.svg" alt="angellist" /></a
+							></li>
+						</ul>
+					</div>
 				</div>
 			</section>
+			<!--Start work section-->
 			<section class="work">
 				<div class="work-tonic">
-					<div>
+					<div class="snapshoot-div">
 						<img src="images/Snapshoot1.png" alt="Snapshoot1" class="snapshoot"/>
+						<img src="images/snapshoot1-des.png" alt="Snapshoot1" class="desk-snapshoot"/>
 					</div>
-					<h1>Tonik</h1>
-					<div class="text-info">
-						<ul>
-							<li class="client-name">CANOPY</li>
-							<li class="role">Back End Dev</li>
-							<li class="year">2015</li>
-						</ul>
+					<div class="work-info">
+						<h1>Tonik</h1>
+						<div class="text-info">
+							<ul>
+								<li class="client-name">CANOPY</li>
+								<li class="role">Back End Dev</li>
+								<li class="year">2015</li>
+							</ul>
+						</div>
+						<p class="work-text"
+							>A daily selection of privately personalized reads; no accounts or sign-ups required.</p
+						>
+						
+							<ul class="tags">
+								<li>html</li>
+								<li>css</li>
+								<li>javaScript</li>
+							   </ul>
+						
+						<button class="see-proj">See project</button>
 					</div>
-					<p class="work-text"
-						>A daily selection of privately personalized reads; no accounts or sign-ups required.</p
-					>
-					<div class="tags">
-						<button>HTML</button>
-						<button>CSS</button>
-						<button>javaScript</button>
-					</div>
-					<button class="see-proj">See project</button>
 				</div>
-
-				<div class="work-tonic">
-					<div>
+			
+				
+				<div class="work-tonic reverse">
+					<div class="snapshoot-div">
 						<img src="images/Snapshoot2.png" alt="Snapshoot2" class="snapshoot"/>
+						<img src="images/snapshoot2-des.png" alt="Snapshoot1" class="desk-snapshoot"/>
 					</div>
-					<h1>Multi-Post Stories</h1>
-					<div class="text-info">
-						<ul>
-							<li class="client-name">CANOPY</li>
-							<li class="role">Back End Dev</li>
-							<li class="year">2015</li>
-						</ul>
+					<div class="work-info">
+						<h1>Multi-Post Stories</h1>
+						<div class="text-info">
+							<ul>
+								<li class="client-name">FACEBOOK</li>
+								<li class="role">Full Stack Dev</li>
+								<li class="year">2015</li>
+							</ul>
+						</div>
+						<p class="work-text"
+							>Experimental content creation feature that allows users
+							 to add to an existing story over the course of a day without spamming their friends.</p
+						>
+						
+							<ul class="tags">
+								<li>html</li>
+								<li class="desk">Ruby on rails</li>
+								<li>css</li>
+								<li>javaScript</li>
+							   </ul>
+						
+						<button class="see-proj">See project</button>
 					</div>
-					<p class="work-text"
-						>A daily selection of privately personalized reads; no accounts or sign-ups required.</p
-					>
-					<div class="tags">
-						<button>HTML</button>
-						<button>CSS</button>
-						<button>javaScript</button>
-					</div>
-					<button class="see-proj">See project</button>
 				</div>
 				<div class="work-tonic">
-					<div>
+					<div class="snapshoot-div">
 						<img src="images/Snapshoot3.png" alt="Snapshoot3"  class="snapshoot"/>
+						<img src="images/snapshoot3-des.png" alt="Snapshoot1" class="desk-snapshoot"/>
 					</div>
-					<h1>Tonic</h1>
+					<div class="work-info">
+					<h1>Facebook 360</h1>
 					<div class="text-info">
 						<ul>
-							<li class="client-name">CANOPY</li>
-							<li class="role">Back End Dev</li>
+							<li class="client-name">FACEBOOK</li>
+							<li class="role">Full Stack Dev</li>
 							<li class="year">2015</li>
 						</ul>
 					</div>
 					<p class="work-text"
-						>A daily selection of privately personalized reads; no accounts or sign-ups required.</p
+						>Exploring the future of media in Facebook's first Virtual Reality app;
+						 a place to discover and enjoy 360 photos and videos on Gear VR</p
 					>
-					<div class="tags">
-						<button>HTML</button>
-						<button>CSS</button>
-						<button>javaScript</button>
-					</div>
+					<ul class="tags">
+						<li>html</li>
+						<li class="desk">Ruby on rails</li>
+						<li>css</li>
+						<li>javaScript</li>
+					   </ul>
 					<button class="see-proj">See project</button>
 				</div>
-				<div class="work-tonic">
-					<div>
+				</div>
+				<div class="work-tonic reverse">
+					<div class="snapshoot-div">
 						<img src="images/Snapshoot4.png" alt="snapshoot4" class="snapshoot"/>
+						<img src="images/snapshoot4-des.png" alt="Snapshoot1" class="desk-snapshoot"/>
 					</div>
-					<h1>Multi-Post Stories</h1>
-					<div class="text-info">
-						<ul>
-							<li class="client-name">CANOPY</li>
-							<li class="role">Back End Dev</li>
-							<li class="year">2015</li>
-						</ul>
+					<div class="work-info">
+						<h1>Uber Navigation</h1>
+						<div class="text-info">
+							<ul>
+								<li class="client-name">Uber</li>
+								<li class="role">Lead Developer</li>
+								<li class="year">2018</li>
+							</ul>
+						</div>
+						<p class="work-text"
+							>A daily selection of privately personalized reads; no accounts or sign-ups required.</p
+						>
+						<ul class="tags">
+							<li>html</li>
+							<li class="desk">Ruby on rails</li>
+							<li>css</li>
+							<li>javaScript</li>
+						   </ul>
+						<button class="see-proj">See project</button>
 					</div>
-					<p class="work-text"
-						>A daily selection of privately personalized reads; no accounts or sign-ups required.</p
-					>
-					<div class="tags">
-						<button>HTML</button>
-						<button>CSS</button>
-						<button>javaScript</button>
-					</div>
-					<button class="see-proj">See project</button>
+
 				</div>
 			</section>
 			<!-- start About me -->
 			<section class="about-me">
-				<div class="about-me-text">
-					<h2>About Myself</h2>
-					<p>
-						Hello I’m a software developer! I can help you build a product , feature or website Look
-						through some of my work and experience! If you like what you see and have a project you
-						need coded, don’t hestiate to contact me.
-					</p>
-					<a href="#">LET’S CONNECT</a>
-				</div>
-				<div class="hero-socialmedia-icons">
-					<ul>
-						<li
-							><a href="#"><img src="images/twitter.png" alt="twitter" /></a
-						></li>
-						<li
-							><a href="#"><img src="images/linkdin.png" alt="linkdin" /></a
-						></li>
-						<li
-							><a href="#"><img src="images/medium.svg" alt="medium" /></a
-						></li>
-						<li
-							><a href="#"><img src="images/github.svg" alt="github" /></a
-						></li>
-						<li
+				<div class="about-me-intro"	>
+					<div class="about-me-text">
+						<h2>About Myself</h2>
+						<p>
+							Hello I’m a software developer! I can help you build a product , feature or website Look
+							through some of my work and experience! If you like what you see and have a project you
+							need coded, don’t hestiate to contact me.
+						</p>
+						<a href="#" id="lets-connect-link">LET’S CONNECT</a>
+					</div>
+					<div class="hero-socialmedia-icons">
+						<ul>
+							<li
+								><a href="#"><img src="images/twitter.png" alt="twitter" /></a
+							></li>
+							<li
+								><a href="#"><img src="images/linkdin.png" alt="linkdin" /></a
+							></li>
+							<li
 							><a href="#"><img src="images/angellist.svg" alt="angellist" /></a
-						></li>
-					</ul>
+							></li>
+							<li
+								><a href="#"><img src="images/github.svg" alt="github" /></a
+							></li>
+							<li
+							><a href="#"><img src="images/medium.svg" alt="medium" /></a
+							></li>
+						</ul>
+					</div>
+					<button class="see-proj">Get My Resume</button>
 				</div>
-				<button class="see-proj">Get My Resume</button>
-
+				 <!-- end of about-me-intro -->	
 				<!--skills Section in about-me -->
+				<div class="about-me-nav">
 				<ul class="skills">
-					<li class="langguages">
+					<li class="languages">
 						<ul class="lang-ul">
-							<li> <h3>langguages</h3></li>
+							<li> <h3>languages</h3></li>
 							<li><img src="images/down-icon.svg" alt="down-icon" /></li>
 						</ul>
 					</li>
 					<li class="lang-submenu">
 						<ul>
-							<li><img src="images/js-icon.png" alt="js-icon" /> JavaScript </li>
-							<li><img src="images/html5-icon.png" alt="html5-icon" /> Html </li>
-							<li><img src="images/css3-icon.png" alt="css3-icon" /> Css </li>
+							<li><img src="images/js-icon.png" alt="js-icon" /><p> JavaScript</p> </li>
+							<li><img src="images/html5-icon.png" alt="html5-icon" /><p> Html </p> </li>
+							<li><img src="images/css3-icon.png" alt="css3-icon" /> <p>Css </p> </li>
 						</ul>
 					</li>
 					<li>
@@ -189,59 +225,61 @@
 							<li><h3>Framworks</h3></li>
 							<li><img src="images/right-icon.svg" alt="right-icon" /></li>
 						</ul>
-
-						<img src="images/line.png" alt="h-line" />
+						<hr>
 					</li>
 					<li>
 						<ul>
 							<li> <h3>Skills</h3></li>
 							<li><img src="images/right-icon.svg" alt="right-icon" /></li>
 						</ul>
-						<img src="images/line.png" alt="h-line" />
+						<hr>
 					</li>
 				</ul>
+			</div> 
 			</section>
 			<!--end of Skills part-->
 			<!--Start Contact Me section-->
 			<section class="contact-me">
-				<div class="contact-header">
-					<h1>Contact me</h1>
-					<p>
-						If you have an application you are interested in developing, a feature that you need
-						built or a project that needs coding. I’d love to help with it
-					</p>
+				<div class="contact-me-content">
+					<div class="contact-header">
+						<h1>Contact me</h1>
+						<p>
+							If you have an application you are interested in developing, a feature that you need
+							built or a project that needs coding. I’d love to help with it
+						</p>
+					</div>
+					<!--Start Contact me form section-->
+					<form action="https://formspree.io/f/mayvqbnn" method="post">
+						<ul>
+							<li>
+								<input
+									type="text"
+									id="name"
+									name="user_name"
+									maxlength="30"
+									placeholder="Your name"
+									required
+								/>
+							</li>
+							<li>
+								<input
+									type="email"
+									id="email"
+									name="user_email"
+									placeholder="Enter your Email"
+									required
+								/>
+							</li>
+							<li>
+								<textarea name="user_message"
+									maxlength="500" id="message" required>
+	Write your message here</textarea
+								>
+							</li>
+						</ul>
+						<button type="submit" id="submit-btn">Get in touch</button>
+					</form>
 				</div>
-				<!--Start Contact me form section-->
-				<form action="https://formspree.io/f/mayvqbnn" method="post">
-					<ul>
-						<li>
-							<input
-								type="text"
-								id="name"
-								name="user_name"
-								maxlength="30"
-								placeholder="Your name"
-								required
-							/>
-						</li>
-						<li>
-							<input
-								type="email"
-								id="email"
-								name="user_email"
-								placeholder="Enter your Email"
-								required
-							/>
-						</li>
-						<li>
-							<textarea name="user_message"
-								 maxlength="500" id="message" required>
-Write your message here</textarea
-							>
-						</li>
-					</ul>
-					<button type="submit" id="submit-btn">Get in touch</button>
-				</form>
 			</section>
 		</div>
 	</body>
