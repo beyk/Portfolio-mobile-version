@@ -7,6 +7,10 @@
     margin-right: 50px;
   }
 
+  .mylogo {
+    padding-left: 135px;
+  }
+
   .desk-nav {
     display: flex;
     justify-content: space-around;
@@ -147,7 +151,7 @@
     display: grid;
     width: 414px;
     height: 144px;
-    padding: 12px;
+    padding: 12px 12px 12px 1px;
     grid-template-columns: 122px 122px 122px;
     grid-template-rows: auto;
     grid-column-gap: 12px;
@@ -181,6 +185,6 @@
   }
 
   #submit-btn {
-    margin-left: 85px;
+    margin-left: 125px;
   }
 }
