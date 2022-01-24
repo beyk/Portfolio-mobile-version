@@ -1,13 +1,15 @@
 # Portfolio
-
->Portfolio: mobile version skeleton.
+## About The Project
+>Portfolio: mobile and Desktop version.
+## You can see the online version => [https://beyk.github.io/Portfolio-mobile-version/](https://beyk.github.io/Portfolio-mobile-version/)
 
 I use flex-box, img and image-background and grid to create this.
 
 ![Screenshot](./images/screenshoot.PNG)
 ## Built With
-- Html
-- Css
+- Html, Html5
+- Css, Css3
+
 ## acknowledgement
 - Thank you @vickymarz
 
