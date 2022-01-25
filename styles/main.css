@@ -51,7 +51,7 @@ header {
   font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1em;
   line-height: 20px;
   display: flex;
   align-items: center;
@@ -93,11 +93,12 @@ nav {
   height: 600px;
   display: flex;
   flex-direction: column;
+  height: fit-content;
 }
 
 /* our text */
 .hero-text h1 {
-  font-size: 40px;
+  font-size: 2.22em;
   line-height: 52px;
 }
 
@@ -109,7 +110,7 @@ nav {
 .hero-text a {
   text-decoration: none;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 16px;
+  font-size: 0.8em;
 }
 
 .hero-socialmedia-icons ul {
@@ -150,7 +151,7 @@ nav {
   background-size: cover;
   background-color: #fff;
   border-radius: 20px 20px 20px 20px;
-  height: 552px;
+  
   width: 100%;
   margin-bottom: 30px;
 }
@@ -199,7 +200,7 @@ nav {
   font-family: Poppins, sans-serif;
   color: #344563;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 0.7em;
   line-height: 16px;
 }
 
@@ -218,7 +219,7 @@ nav {
   color: #396df2;
   border-color: #396df2;
   border-radius: 10px;
-  font-size: 17px;
+  font-size: 1em;
 }
 
 /* About Me section */
@@ -239,7 +240,7 @@ nav {
 }
 
 .about-me-text h2 {
-  font-size: 40px;
+  font-size: 2.22em;
   color: #172b4d;
 }
 
@@ -269,7 +270,7 @@ nav {
 
 #lets-connect-link {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 0.9em;
   line-height: 24px;
   display: inline-block;
   margin-top: 10px;
@@ -292,7 +293,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: -150px;
+  margin-top: -1px;
 }
 
 .contact-header {
@@ -303,7 +304,7 @@ nav {
 .contact-header h1 {
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 2.22em;
   line-height: 52px;
   color: #fff;
 }
@@ -312,7 +313,7 @@ nav {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 1.5em;
   color: #ebebff;
   margin-top: -12px;
   padding: 10px;
@@ -336,7 +337,7 @@ form ul li input {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   background: white;
-  font-size: 15px;
+  font-size: 0.7em;
   line-height: 20px;
   color: #172b4d;
   padding: 15px 16px;
@@ -358,7 +359,7 @@ form ul li textarea {
   height: 140px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   color: #39393a;
-  font-size: 14px;
+  font-size: 0.6em;
 }
 
 form ul li textarea:focus {
@@ -373,7 +374,7 @@ form ul li textarea:focus {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 0.8em;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #061170;
