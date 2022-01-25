@@ -191,7 +191,7 @@ nav {
   display: flex;
   padding: 1px;
   margin: 1px;
-  color: #7a869a;
+  color: #000;
 }
 
 .text-info ul .client-name {
@@ -235,7 +235,7 @@ nav {
 }
 
 .about-me-text {
-  color: #344563;
+  color: #000;
 }
 
 .about-me-text h2 {
@@ -273,7 +273,7 @@ nav {
   line-height: 24px;
   display: inline-block;
   margin-top: 10px;
-  color: #7f8cff;
+  color: #061597;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -356,8 +356,8 @@ form ul li textarea {
   width: 93%;
   height: 140px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  color: #b3bac5;
-  font-size: 15px;
+  color: #39393a;
+  font-size: 14px;
 }
 
 form ul li textarea:focus {
@@ -374,7 +374,7 @@ form ul li textarea:focus {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #6070ff;
+  color: #061170;
   outline: none;
   border: 1px solid #6070ff;
   margin-bottom: 45px;
