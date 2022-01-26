@@ -90,10 +90,8 @@ nav {
   background-color: #fff;
   margin-bottom: 20px;
   border-radius: 0 0 0 100px;
-  height: 600px;
   display: flex;
   flex-direction: column;
-  height: fit-content;
 }
 
 /* our text */
@@ -151,7 +149,6 @@ nav {
   background-size: cover;
   background-color: #fff;
   border-radius: 20px 20px 20px 20px;
-  
   width: 100%;
   margin-bottom: 30px;
 }
