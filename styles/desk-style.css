@@ -41,11 +41,11 @@
   }
 
   .hero-content h1 {
-    font-size: 48px;
+    font-size: 2.6em;
   }
 
   .hero-content p {
-    font-size: 20px;
+    font-size: 1.1em;
   }
 
   .snapshoot {
@@ -59,7 +59,7 @@
 
   .desk-snapshoot {
     width: 100%;
-    height: 100%;
+    height: 90%;
     padding-top: 30px;
     display: block;
   }
@@ -71,7 +71,7 @@
   }
 
   .work h1 {
-    font-size: 40px;
+    font-size: 2.2em;
     line-height: 52px;
   }
 
@@ -96,7 +96,7 @@
   }
 
   .tags > li {
-    font-size: 12px;
+    font-size: 0.66em;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.03em;
@@ -117,7 +117,7 @@
   .text-info ul {
     justify-content: unset;
     list-style: unset;
-    font-size: 18px;
+    font-size: 1em;
     margin-top: -15px;
   }
 
@@ -125,7 +125,7 @@
     color: #344563;
     font-weight: 500;
     line-height: 24px;
-    font-size: 18px;
+    font-size: 1em;
   }
 
   .text-info ul li {
@@ -149,7 +149,7 @@
 
   .lang-submenu ul {
     display: grid;
-    width: 414px;
+    width: 100%;
     height: 144px;
     padding: 12px 12px 12px 1px;
     grid-template-columns: 122px 122px 122px;
@@ -159,13 +159,13 @@
   }
 
   .lang-submenu ul li {
-    display: grid;
+    display: flex;
+    width: 110%;
     border-radius: 8px;
     align-items: center;
-    grid-template-rows: 62px auto;
-    grid-template-columns: auto;
-    gap: 0;
-    margin: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
   }
 
   .contact-me {
