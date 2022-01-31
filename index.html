@@ -23,13 +23,18 @@
 			
 			<header class="portfo-header">
 				<a href="#" class="mylogo"> My Logo</a>
-				<nav class="menu-button" onclick="toggle()">
-					<ul class="desk-nav">
-						<li><a href="#">portfolio</a></li>
-						<li><a href="#">about</a></li>
-						<li><a href="#">contact</a></li>
+				<nav class="menu-button" >
+
+					<div class="ham" >  
+						<span class="bar1"></span>  
+						<span class="bar2"></span>  
+						<span class="bar3"></span>  
+					</div>  
+					<ul class="desk-nav"   onclick="showMenu()">
+							<li><a href="#">portfolio</a></li>
+							<li><a href="#">about</a></li>
+							<li><a href="#">contact</a></li>
 					</ul>
-					<img id="hamburger-btn" src="images/ham-btn.png" alt="menu button" />
 				</nav>
 			</header>
 			<section class="hero">
@@ -292,5 +297,6 @@
 				</div>
 			</section>
 		</main>
+		<script src="main.js"></script>
 	</body>
 </html>
