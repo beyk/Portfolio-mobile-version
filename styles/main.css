@@ -40,10 +40,16 @@ a {
 }
 
 /* Header include my-logo and menu */
-header {
+.portfo-header {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  background-color: #fff;
+}
+
+.header-container {
+display: none;
+}
+rgin-top: 20px;
 }
 
 /* My logo style */
@@ -72,60 +78,52 @@ header {
   }
 }
 
-nav {
-  margin-right: 20px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+body  {
+  font-family: 'Arial' , sans-serif;
 }
 
 .desk-nav {
+display: none;
+}
+
+nav {
+  background: #fff;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+  background-color: #6070FF;
+  opacity: 90%;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
   display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
 }
 
-.nav-change {
-  display: block;
-}
-
- /*Properties for Hamburger*/  
- .ham{  
-  display:none;  
-  padding:5px;  
-  cursor:pointer;  
- }  
- .bar1,.bar2,.bar3{  
-  display:block;  
-  width:35px;  
-  height:3px;  
-  margin:5px auto;  
-  background-color:#101010;  
-  transition: 0.4s;  
- }  
-
- @media only screen and (max-width:768px){  
- .nav-sub{  
-  position:absolute;   
-  top:10vh;  
-  right:0px;  
-  flex-direction:column;  
-  background-color:rgb(0,0,0,0.75);  
-  border-radius:0px 0px 0px 20px;  
-  transition:transform 0.3s ease-in;  
-  transform:translate(100%);  
- }  
-.nav-change{  
-  transform:translate(0%);  
- }  
-.ham{  
-  display:block;  
- }  
-.change .bar1 {  
- transform: rotate(45deg) translate(8px,3px);  
-}  
-.change .bar2 {  
- opacity: 0;  
-}  
-.change .bar3 {  
- transform: rotate(-45deg) translate(8px,-3px);  
-}  
-}
+/*add here*/
 /* Hero include  top images, text and bottom images */
 
 .hero {
