@@ -1,10 +1,16 @@
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+const menuLink = document.querySelectorAll(".menu-Links");
 
-const hamburger = document.querySelector(".ham");  
-const navsub = document.querySelector(".desk-nav");  
-hamburger.addEventListener('click', () => {  
- hamburger.classList.toggle("change")  
- navsub.classList.toggle("nav-change")  
-});  
-function showMenu(){
-    hamburger.classList.replace("change");
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
 }
+
+function close(){
+    mainMenu.style.top = '-100%';
+    mainMenu.style.display = 'none';
+
+}
+
