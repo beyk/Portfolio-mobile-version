@@ -14,3 +14,8 @@ function close(){
 }
 
 //add here
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+for (let i = 0; i < menuLink.length; i += 1) {
+    menuLink[i].addEventListener('click', close);
+  }
