@@ -22,19 +22,29 @@
 		<main class="container">
 			
 			<header class="portfo-header">
-				<a href="#" class="mylogo"> My Logo</a>
-				<nav class="menu-button" >
-
-					<div class="ham" >  
-						<span class="bar1"></span>  
-						<span class="bar2"></span>  
-						<span class="bar3"></span>  
-					</div>  
-					<ul class="desk-nav"   onclick="showMenu()">
-							<li><a href="#">portfolio</a></li>
-							<li><a href="#">about</a></li>
-							<li><a href="#">contact</a></li>
+				<div class="mylogo"><h1>Beyk</h1>
+				</div>
+				<nav class="nav">
+				<div class="mobile-nav">
+					<div class="openMenu">
+						<i class="fa fa-bars"></i>
+					</div>
+					<ul class="mainMenu">
+						<li><a href="#work" class="menu-Links">portfolio</a></li>
+							<li><a href="#about-me" class="menu-Links">about</a></li>
+							<li><a href="#contact-me"class="menu-Links">contact</a></li>
+						<div class="closeMenu"><i class="fa fa-times"></i>
+						</div>
+						
 					</ul>
+				</div>
+				<div class="desk-nav">
+					<ul class="desk-nav-ul" >
+						<li><a href="#">portfolio</a></li>
+						<li><a href="#">about</a></li>
+						<li><a href="#">contact</a></li>
+				</ul>
+			</div>
 				</nav>
 			</header>
 			<section class="hero">
@@ -297,6 +307,5 @@
 				</div>
 			</section>
 		</main>
-		<script src="main.js"></script>
 	</body>
 </html>
