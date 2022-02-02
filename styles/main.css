@@ -49,8 +49,6 @@ a {
 .header-container {
 display: none;
 }
-rgin-top: 20px;
-}
 
 /* My logo style */
 .mylogo {
@@ -123,7 +121,61 @@ nav .mainMenu .closeMenu , .icons i {
   cursor: pointer;
 }
 
-/*add here*/
+
+.fa-bars {
+  color: #6070FF;
+}
+.fa-times{
+  color: #fff;
+}
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        font-family: Poppins,Arial, Helvetica, sans-serif;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        align-items: left;
+        background: #6070FF;
+        transition: left 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li {
+      margin-left: 20px;
+      font-family: Poppins,Arial, Helvetica, sans-serif;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 44px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    nav .mainMenu li:first-child {
+      margin-top: 110px;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+    .hidden {
+      display: none;
+    }
 /* Hero include  top images, text and bottom images */
 
 .hero {
