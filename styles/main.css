@@ -21,7 +21,7 @@ button:hover {
 button:active {
   background-color: #2230d2;
   color: #fff;
-} 
+}
 
 a {
   text-decoration: none;
@@ -45,8 +45,9 @@ a {
   justify-content: space-between;
   background-color: #fff;
 }
+
 .header-container {
-display: none;
+  display: none;
 }
 
 /* My logo style */
@@ -75,15 +76,10 @@ display: none;
   }
 }
 
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
-}
-body  {
-    font-family: 'Arial' , sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .desk-nav {
@@ -91,101 +87,86 @@ body  {
 }
 
 nav {
-    background: #fff;
-    color: #000;
-    display: flex;
-    justify-content: space-between;
-}
-nav .mainMenu {
-    display: flex;
-    list-style: none;
-    background-color: #6070FF;
-    opacity: 90%;
-}
-nav .mainMenu li a {
-    display: inline-block;
-    padding: 10px;
-    text-decoration: none;
-    color: #fff;
+  background: #fff;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
 }
 
-nav .openMenu {
-    font-size: 2rem;
-    margin: 20px;
-    display: none;
-    cursor: pointer;
-}
-nav .mainMenu .closeMenu , .icons i {
-    font-size: 2rem;
-    display: none;
-    cursor: pointer;
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
 }
 
 .fa-bars {
-  color: #6070FF;
+  color: #6070ff;
 }
 
-.fa-times{
+.fa-times {
   color: #fff;
 }
 
 nav .logo {
-    margin: 6px;
-    font-size: 25px;
-    cursor: pointer;
+  margin: 6px;
+  font-size: 25px;
+  cursor: pointer;
 }
 
-    nav .mainMenu {
-        height: 100vh;
-        position: fixed;
-        font-family: Poppins,Arial, Helvetica, sans-serif;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 10;
-        flex-direction: column;
-        align-items: left;
-        background: #6070FF;
-        transition: left 1s ease;
-        display: none;
-    }
-    
-    nav .mainMenu .closeMenu {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
+nav .mainMenu {
+  height: 100vh;
+  position: fixed;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  flex-direction: column;
+  background: #6070ff;
+  transition: left 1s ease;
+  display: none;
+  list-style: none;
+  background-color: #6070ff;
+  opacity: 90%;
+}
 
-    }
-    nav .openMenu {
-        display: block;
-    }
-    nav .mainMenu li {
-      margin-left: 20px;
-      font-family: Poppins,Arial, Helvetica, sans-serif;
-      font-size: 32px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 44px;
-      letter-spacing: 0em;
-      text-align: left;
+nav .mainMenu .closeMenu {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 
-    }
-    nav .mainMenu li:first-child {
-      margin-top: 110px;
-    }
-    .icons i {
-        display: inline-block;
-        padding: 12px;
-    }
-    .hidden {
-      display: none;
-    }
+nav .openMenu {
+  display: block;
+  font-size: 2rem;
+  margin: 20px;
+  cursor: pointer;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.8em;
+}
+
+.icons i {
+  display: inline-block;
+  padding: 12px;
+}
+
+.hidden {
+  display: none;
+}
 
 
 
-  
- 
+
+
 /* Hero include  top images, text and bottom images */
 
 .hero {
@@ -211,12 +192,6 @@ nav .logo {
 .hero-text {
   margin-top: 130px;
   color: #172b4d;
-}
-
-.hero-text a {
-  text-decoration: none;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 0.8em;
 }
 
 .hero-socialmedia-icons ul {
@@ -246,7 +221,6 @@ nav .logo {
 .work h1 {
   color: #344563;
 }
-
 
 .desk-snapshoot {
   display: none;
@@ -306,11 +280,11 @@ nav .logo {
   padding: 1px;
   margin: 1px;
   color: #000;
-  font-family: Poppins,Arial, Helvetica, sans-serif;
-  font-style:normal;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
   font-size: 15px;
   font-weight: bold;
-  }
+}
 
 .text-info ul .client-name {
   list-style: none;
@@ -322,18 +296,16 @@ nav .logo {
 }
 
 .text-info ul li {
-    list-style: disc;
-    padding-right: 20px;
-    color: #7A869A;
+  list-style: disc;
+  padding-right: 20px;
+  color: #7a869a;
 }
 
 .work-text {
-
-font-family: Poppins,Arial, Helvetica, sans-serif;
-font-style: Regular;
-font-size: 15px;
-line-height: 24px;
-align-items: center;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  align-items: center;
 }
 
 .see-proj {
@@ -346,6 +318,17 @@ align-items: center;
   font-size: 1em;
   margin: 20px 0 20px 20px;
   padding: 10px;
+}
+
+nav .mainMenu li {
+  margin-left: 20px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
 }
 
 /* About Me section */
@@ -371,8 +354,8 @@ align-items: center;
 
 .about-me-text p {
   font-size: 15px;
-    line-height: 24px;
-    align-items: center;
+  line-height: 24px;
+  align-items: center;
 }
 
 .skills ul {
@@ -398,6 +381,14 @@ align-items: center;
   background-color: #f7f7f9;
   margin: 10px;
   border-radius: 10px;
+}
+
+form ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+nav .mainMenu li:first-child {
+  margin-top: 110px;
 }
 
 #lets-connect-link {
@@ -458,10 +449,6 @@ align-items: center;
 
 form {
   padding: 30px 24px 0 24px;
-}
-
-form ul li:not(:last-child) {
-  margin-bottom: 20px;
 }
 
 form ul li input {

@@ -19,6 +19,7 @@
     display: block;
     margin-top: 20px;
   }
+
   .desk-nav-ul {
     display: flex;
     justify-content: space-around;
@@ -36,7 +37,7 @@
     color: #344563;
   }
 
-  
+
   /* Start hero section */
   .hero {
     background-image: url("../images/header-bg-des.svg");
