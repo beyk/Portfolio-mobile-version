@@ -177,7 +177,7 @@ nav .mainMenu li a {
   border-radius: 0 0 0 100px;
   display: flex;
   flex-direction: column;
-  height: 495px;
+  height: 621px;
 }
 
 /* our text */
@@ -721,26 +721,8 @@ section .modal {
 
 /* MODAL */
 
-.detail-section {
-  display: flex;
-  justify-content: center;
-}
 
-.modal-mobile-detail {
-  display: flex;
-  gap: 20px;
-}
 
-.modal-tools li {
-  margin-bottom: 10px;
-}
-
-.mobil {
-  border-bottom: none;
-}
-.mob {
-  display: none;
-}
 .popup {
   display: none;
   position: fixed;

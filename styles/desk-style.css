@@ -213,4 +213,25 @@
     line-height: 28px;
     margin-top: 20px;
   }
+  .detail-section {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .modal-mobile-detail {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .modal-tools li {
+    margin-bottom: 10px;
+  }
+  
+  .mobil {
+    border-bottom: none;
+  }
+  
+  .mob {
+    display: none;
+  }
 }
