@@ -1,3 +1,4 @@
+
 body {
   align-items: center;
   font-family: Poppins, sans-serif;
@@ -33,17 +34,20 @@ a {
 /* container include all other parts */
 .container {
   background-color: #fff;
-  position: absolute;
-  height: 618px;
+  height: 648px;
   top: 0;
   border-bottom-left-radius: 90px;
 }
 
 /* Header include my-logo and menu */
-header {
+.portfo-header {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  background-color: #fff;
+}
+
+.header-container {
+  display: none;
 }
 
 /* My logo style */
@@ -72,11 +76,90 @@ header {
   }
 }
 
-nav {
-  margin-right: 20px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .desk-nav {
+  display: none;
+}
+
+nav {
+  background: #fff;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+.fa-bars {
+  color: #6070ff;
+}
+
+.fa-times {
+  color: #fff;
+}
+
+nav .logo {
+  margin: 6px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+nav .mainMenu {
+  height: 100vh;
+  position: fixed;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  flex-direction: column;
+  background: #6070ff;
+  transition: left 1s ease;
+  display: none;
+  list-style: none;
+  background-color: #6070ff;
+  opacity: 90%;
+}
+
+nav .mainMenu .closeMenu {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+nav .openMenu {
+  display: block;
+  font-size: 2rem;
+  margin: 20px;
+  cursor: pointer;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.8em;
+}
+
+.icons i {
+  display: inline-block;
+  padding: 12px;
+}
+
+.hidden {
   display: none;
 }
 
@@ -89,9 +172,11 @@ nav {
   background-repeat: no-repeat;
   background-color: #fff;
   margin-bottom: 20px;
+  margin-top: -10px;
   border-radius: 0 0 0 100px;
   display: flex;
   flex-direction: column;
+  height: 495px;
 }
 
 /* our text */
@@ -103,12 +188,6 @@ nav {
 .hero-text {
   margin-top: 130px;
   color: #172b4d;
-}
-
-.hero-text a {
-  text-decoration: none;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 0.8em;
 }
 
 .hero-socialmedia-icons ul {
@@ -131,6 +210,8 @@ nav {
   display: grid;
   grid-template-rows: auto;
   padding-left: 20px;
+  width: min-content;
+  margin-top: 60px;
 }
 
 .work h1 {
@@ -139,6 +220,11 @@ nav {
 
 .desk-snapshoot {
   display: none;
+}
+
+.snapshoot-div {
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 .work-tonic {
@@ -190,6 +276,10 @@ nav {
   padding: 1px;
   margin: 1px;
   color: #000;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .text-info ul .client-name {
@@ -197,16 +287,21 @@ nav {
   font-family: Poppins, sans-serif;
   color: #344563;
   font-weight: 600;
-  font-size: 0.7em;
+  font-size: 15px;
   line-height: 16px;
 }
 
 .text-info ul li {
-  list-style: inside;
+  list-style: disc;
+  padding-right: 20px;
+  color: #7a869a;
 }
 
 .work-text {
-  margin: 0;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  align-items: center;
 }
 
 .see-proj {
@@ -217,6 +312,19 @@ nav {
   border-color: #396df2;
   border-radius: 10px;
   font-size: 1em;
+  margin: 20px 0 20px 20px;
+  padding: 10px;
+}
+
+nav .mainMenu li {
+  margin-left: 20px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
 }
 
 /* About Me section */
@@ -225,7 +333,6 @@ nav {
   display: flex;
   flex-direction: column;
   background: #fff;
-  width: 100%;
   padding: 24px;
   border-top-right-radius: 70px;
   color: #000;
@@ -241,11 +348,18 @@ nav {
   color: #172b4d;
 }
 
+.about-me-text p {
+  font-size: 15px;
+  line-height: 24px;
+  align-items: center;
+}
+
 .skills ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  padding: 10px;
 }
 
 .lang-submenu ul {
@@ -263,6 +377,14 @@ nav {
   background-color: #f7f7f9;
   margin: 10px;
   border-radius: 10px;
+}
+
+form ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+nav .mainMenu li:first-child {
+  margin-top: 110px;
 }
 
 #lets-connect-link {
@@ -290,7 +412,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: -1px;
+  margin-top: -100px;
 }
 
 .contact-header {
@@ -323,10 +445,6 @@ nav {
 
 form {
   padding: 30px 24px 0 24px;
-}
-
-form ul li:not(:last-child) {
-  margin-bottom: 20px;
 }
 
 form ul li input {

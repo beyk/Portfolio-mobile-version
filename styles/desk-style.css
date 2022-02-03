@@ -3,8 +3,12 @@
 @media (min-width: 992px) {
   /* Header of the page */
   .portfo-header {
-    margin-bottom: 40px;
+    width: 100%;
     margin-right: 50px;
+  }
+
+  .mobile-nav {
+    display: none;
   }
 
   .mylogo {
@@ -12,19 +16,24 @@
   }
 
   .desk-nav {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .desk-nav-ul {
     display: flex;
     justify-content: space-around;
   }
 
-  #hamburger-btn {
+  .hamburger {
     display: none;
   }
 
-  .desk-nav li {
+  .desk-nav-ul li {
     padding-right: 50px;
   }
 
-  .desk-nav li a {
+  .desk-nav-ul li a {
     color: #344563;
   }
 
