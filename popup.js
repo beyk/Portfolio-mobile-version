@@ -97,4 +97,15 @@ for (let i = 0; i < data.length; i += 1) {
 				</div>`;
 }
 
-
+document.addEventListener('click', (click) => {
+  if (click.target.id === 'open-me') {
+    popUp.style.display = 'block';
+    modal.style.display = 'block';
+  }
+});
+for (let i = 0; i < data.length; i += 1) {
+  document.querySelector(`.see-proj-${i}`).addEventListener('click', () => {
+    snapshoot1Desk.src = data[i].image;
+    modaltitle.innerHTML = data[i].title;
+  });
+}
