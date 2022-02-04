@@ -237,4 +237,13 @@
   .mob {
     display: none;
   }
+
+  .error-msg {
+    display: none;
+    color: rgb(240, 34, 34);
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+  }
 }

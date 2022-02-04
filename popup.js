@@ -171,7 +171,7 @@ for (let i = 0; i < data.length; i += 1) {
 }
 
 document.addEventListener('click', (click) => {
-  if (click.target.id == 'open-me') {
+  if (click.target.id === 'open-me') {
     popUp.style.display = 'block';
     modal.style.display = 'block';
   }
