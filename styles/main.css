@@ -37,7 +37,10 @@ a {
   height: 648px;
   top: 0;
   border-bottom-left-radius: 90px;
-  height: 100%;
+  display: grid;
+  justify-self: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* Header include my-logo and menu */
@@ -267,6 +270,9 @@ nav .mainMenu li a {
 }
 
 .snapshoot {
+  display: flex;
+  justify-content: stretch;
+  margin: 0 21px;
   transition: transform 1s linear;
 }
 
@@ -292,6 +298,10 @@ nav .mainMenu li a {
   font-weight: 600;
   font-size: 15px;
   line-height: 16px;
+}
+
+.modal-tools li {
+  margin-bottom: 20px;
 }
 
 .text-info ul li {
@@ -531,13 +541,6 @@ form ul li textarea:focus {
   margin-bottom: 20px;
 }
 
-.container {
-  display: grid;
-  justify-self: center;
-  width: 90%;
-  margin: 0 auto;
-}
-
 .content {
   display: grid;
   grid-template-rows: auto auto;
@@ -546,12 +549,6 @@ form ul li textarea:focus {
   border: 1px solid #dfe1e6;
   border-radius: 9px;
   margin-bottom: 100px;
-}
-
-.snapshoot {
-  display: flex;
-  justify-content: stretch;
-  margin: 0 21px;
 }
 
 .snapshoot img {
@@ -698,10 +695,6 @@ section .modal {
   margin-top: 20px;
 }
 
-.modal-tools li {
-  margin-bottom: 20px;
-}
-
 .modal-btn {
   font-weight: 500;
   font-size: 17px;
@@ -720,8 +713,6 @@ section .modal {
 }
 
 /* MODAL */
-
-
 
 .popup {
   display: none;

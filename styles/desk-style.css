@@ -137,6 +137,10 @@
     font-size: 1em;
   }
 
+  .modal-tools li {
+    margin-bottom: 10px;
+  }
+
   .text-info ul li {
     padding-right: 30px;
   }
@@ -201,10 +205,12 @@
     width: 100%;
     display: none;
   }
+
   .snapshoot1-desk {
     width: 100%;
     display: block;
   }
+
   .modal-description {
     font-size: 18px;
     color: #344563;
@@ -213,24 +219,21 @@
     line-height: 28px;
     margin-top: 20px;
   }
+
   .detail-section {
     display: flex;
     justify-content: center;
   }
-  
+
   .modal-mobile-detail {
     display: flex;
     gap: 20px;
   }
-  
-  .modal-tools li {
-    margin-bottom: 10px;
-  }
-  
+
   .mobil {
     border-bottom: none;
   }
-  
+
   .mob {
     display: none;
   }
