@@ -1,4 +1,5 @@
 /* eslint linebreak-style: ["error", "windows"] */
+/*eslint linebreak-style: ["error", "unix"]*/
 const mainMenu = document.querySelector('.mainMenu');
 const closeMenu = document.querySelector('.closeMenu');
 const openMenu = document.querySelector('.openMenu');
