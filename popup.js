@@ -1,5 +1,4 @@
 const popUp = document.querySelector('.popup');
-const modal = document.querySelector('.modal');
 
 const data = [
   {
@@ -10,7 +9,7 @@ const data = [
     popDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     tags: ['html', 'css', 'javascript'],
     popupTags: ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstrap'],
-    image: 'images/snapshoot1.png',
+    image: 'images/Snapshoot1.png',
     desktopImage: 'images/snapshoot1-des.png',
     description:
         'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -20,7 +19,7 @@ const data = [
   {
     id: 'project-2',
     title: 'Multi-Post Stories',
-    image: 'images/snapshoot2.png',
+    image: 'images/Snapshoot2.png',
     desktopImage: 'images/snapshoot2-des.png',
     subtitle: ['FACEBOOK', 'Back End Dev', '2015'],
     desription: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
@@ -39,7 +38,7 @@ const data = [
     tags: ['html', 'Ruby on rails', 'css', 'javascript'],
     popupTags: ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstrap'],
     image: 'images/snapshoot3.png',
-    desktopImage: 'images/snapshoot3-des.png',
+    desktopImage: 'images/Snapshoot3-des.png',
     seeLive: 'https://github.com/beyk',
     seeSource: 'https://github.com/beyk',
   },
@@ -48,10 +47,10 @@ const data = [
     title: 'Multi-Post Stories',
     subtitle: ['UBER', 'Lead Developer', '2018'],
     desription: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    popDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
+    popDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type .',
     tags: ['html', 'Ruby on rails', 'css', 'javascript'],
     popupTags: ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstrap'],
-    image: 'images/snapshoot4.png',
+    image: 'images/Snapshoot4.png',
     desktopImage: 'images/snapshoot4-des.png',
     seeLive: 'https://github.com/beyk',
     seeSource: 'https://github.com/beyk',
@@ -95,13 +94,15 @@ for (let i = 0; i < data.length; i += 1) {
             ${tagsValue(i)}
               </ul>
         
-        <button type="button" id="open-me" class='see-proj see-proj-${i}'>See project</button>
+        <button type="button" id="${data[i].id}" class='see-proj see-proj-${i}'>See project</button>
       </div>
     </div>`;
 }
 
+const arr = [];
+
 for (let i = 0; i < data.length; i += 1) {
-  document.querySelector('.popup').innerHTML = ` <div class="modal">
+  arr.push(` <div class="modal">
   <div class="popup-header">
   <h2 class="tonic">${data[i].title}</h2>
   <div id="close-popup-sign">
@@ -141,24 +142,20 @@ for (let i = 0; i < data.length; i += 1) {
     </div>
     </div>
   </div>
-  </div>;`;
+  </div>;`);
 }
 
-document.addEventListener('click', (click) => {
-  if (click.target.id === 'open-me') {
-    popUp.style.display = 'block';
-    modal.style.display = 'block';
-  }
+const seeMeBtns = document.querySelectorAll('.see-proj');
+
+seeMeBtns.forEach((btn, index) => {
+  btn.addEventListener('click', (click) => {
+    if (click.target.id === btn.id) {
+      popUp.innerHTML = arr[index];
+      popUp.style.display = 'block';
+    }
+    const closeBtn = popUp.querySelector('.close-popUp');
+    closeBtn.addEventListener('click', () => {
+      popUp.style.display = 'none';
+    });
+  });
 });
-
-for (let i = 0; i < data.length; i += 1) {
-  document.querySelector(`.see-proj-${i}`).addEventListener('click', () => {
-    // snapshoot1Desk.src = data[i].desktopImage;
-    // modaltitle.innerHTML = data[i].title;
-  });
-
-  document.querySelector('.close-popUp').addEventListener('click', () => {
-    popUp.style.display = 'none';
-    modal.style.display = 'none';
-  });
-}

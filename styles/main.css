@@ -643,6 +643,10 @@ form ul li textarea:focus {
   margin: 0 21px;
 }
 
+.mob  {
+  display: flex;
+}
+
 .modal-title {
   font-style: normal;
   font-weight: bold;
@@ -677,8 +681,6 @@ form ul li textarea:focus {
 }
 
 .modal-info {
-  display: grid;
-  grid-template-columns: 60% 40%;
   margin: 0 21px;
 }
 
