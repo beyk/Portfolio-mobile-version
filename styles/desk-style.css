@@ -238,10 +238,10 @@
     border-bottom: none;
     display: none;
   }
+
   .modal-info {
     display: grid;
     grid-template-columns: 60% 40%;
     margin: 0 21px;
   }
-  
 }
