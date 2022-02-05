@@ -111,6 +111,10 @@
     letter-spacing: 0.03em;
   }
 
+  .desk {
+    display: flex;
+  }
+
   .tags .desk {
     display: grid;
   }
@@ -230,8 +234,9 @@
     gap: 20px;
   }
 
-  .mobil {
+  .mobile {
     border-bottom: none;
+    display: none;
   }
 
   .mob {

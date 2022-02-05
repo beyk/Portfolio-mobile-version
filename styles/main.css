@@ -247,11 +247,11 @@ nav .mainMenu li a {
 
 .tags {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-column-gap: 8px;
+  grid-template-columns: auto max-content auto;
+  gap: 18px;
   width: 203px;
   height: 24px;
-  margin: 20px 0 5px 0;
+  margin: 20px 0 25px 10px;
 }
 
 .tags > li {
@@ -291,13 +291,11 @@ nav .mainMenu li a {
   font-weight: bold;
 }
 
-.text-info ul .client-name {
+.text-info ul .subtitle-0 {
   list-style: none;
   font-family: Poppins, sans-serif;
   color: #344563;
   font-weight: 600;
-  font-size: 15px;
-  line-height: 16px;
 }
 
 .modal-tools li {
@@ -638,10 +636,6 @@ form ul li textarea:focus {
   border-radius: 10px;
 }
 
-section .modal {
-  display: none;
-}
-
 .modal-div-1 {
   display: flex;
   justify-content: space-between;
@@ -682,7 +676,9 @@ section .modal {
   display: none;
 }
 
-.modal-mobile-detail {
+.modal-info {
+  display: grid;
+  grid-template-columns: 60% 40%;
   margin: 0 21px;
 }
 
@@ -724,4 +720,13 @@ section .modal {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0 0 0); /* Fallback color */
   background-color: rgb(0 0 0 / 40%); /* Black w/ opacity */
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subtitlePopupValue ul {
+  display: flex;
 }
