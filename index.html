@@ -4,6 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="styles/main.css" />
 		<link rel="stylesheet" href="styles/desk-style.css" />
 		<title>Beyk's portfoilo </title>
@@ -80,121 +86,18 @@
 					</div>
 				</div>
 			</section>
-			<!--Start work section-->
-			<section class="work" id="work">
-				<div class="work-tonic">
-					<div class="snapshoot-div">
-						<img src="images/Snapshoot1.png" alt="Project image" class="snapshoot"/>
-						<img src="images/snapshoot1-des.png" alt="Project image" class="desk-snapshoot"/>
-					</div>
-					<div class="work-info">
-						<h2>Tonik</h2>
-						<div class="text-info">
-							<ul>
-								<li class="client-name">CANOPY</li>
-								<li class="role">Back End Dev</li>
-								<li class="year">2015</li>
-							</ul>
-						</div>
-						<p class="work-text"
-							>A daily selection of privately personalized reads; no accounts or sign-ups required.</p
-						>
-						
-							<ul class="tags">
-								<li>html</li>
-								<li>css</li>
-								<li>javaScript</li>
-							   </ul>
-						
-						<button class="see-proj">See project</button>
-					</div>
+			<!--Popup-->
+			<section class="detail-section">
+				<div class="popup">
+				 
 				</div>
+			  </section>
 			
-				
-				<div class="work-tonic reverse">
-					<div class="snapshoot-div">
-						<img src="images/Snapshoot2.png" alt="Project image" class="snapshoot"/>
-						<img src="images/snapshoot2-des.png" alt="Project image" class="desk-snapshoot"/>
-					</div>
-					<div class="work-info">
-						<h2>Multi-Post Stories</h2>
-						<div class="text-info">
-							<ul>
-								<li class="client-name">FACEBOOK</li>
-								<li class="role">Full Stack Dev</li>
-								<li class="year">2015</li>
-							</ul>
-						</div>
-						<p class="work-text"
-							>Experimental content creation feature that allows users
-							 to add to an existing story over the course of a day without spamming their friends.</p
-						>
-						
-							<ul class="tags">
-								<li>html</li>
-								<li class="desk">Ruby on rails</li>
-								<li>css</li>
-								<li>javaScript</li>
-							   </ul>
-						
-						<button class="see-proj">See project</button>
-					</div>
+			<!--Start work section-->
+			<section id="portfolio" class="work">
+				<div class="container">
 				</div>
-				<div class="work-tonic">
-					<div class="snapshoot-div">
-						<img src="images/Snapshoot3.png" alt="Project image"  class="snapshoot"/>
-						<img src="images/snapshoot3-des.png" alt="Project image" class="desk-snapshoot"/>
-					</div>
-					<div class="work-info">
-					<h2>Facebook 360</h2>
-					<div class="text-info">
-						<ul>
-							<li class="client-name">FACEBOOK</li>
-							<li class="role">Full Stack Dev</li>
-							<li class="year">2015</li>
-						</ul>
-					</div>
-					<p class="work-text"
-						>Exploring the future of media in Facebook's first Virtual Reality app;
-						 a place to discover and enjoy 360 photos and videos on Gear VR</p
-					>
-					<ul class="tags">
-						<li>html</li>
-						<li class="desk">Ruby on rails</li>
-						<li>css</li>
-						<li>javaScript</li>
-					   </ul>
-					<button class="see-proj">See project</button>
-				</div>
-				</div>
-				<div class="work-tonic reverse">
-					<div class="snapshoot-div">
-						<img src="images/Snapshoot4.png" alt="Project image" class="snapshoot"/>
-						<img src="images/snapshoot4-des.png" alt="Project image" class="desk-snapshoot"/>
-					</div>
-					<div class="work-info">
-						<h2>Uber Navigation</h2>
-						<div class="text-info">
-							<ul>
-								<li class="client-name">Uber</li>
-								<li class="role">Lead Developer</li>
-								<li class="year">2018</li>
-							</ul>
-						</div>
-						<p class="work-text"
-							>A daily selection of privately personalized reads; no accounts or sign-ups required.</p
-						>
-						<ul class="tags">
-							<li>html</li>
-							<li class="desk">Ruby on rails</li>
-							<li>css</li>
-							<li>javaScript</li>
-						   </ul>
-						<button class="see-proj">See project</button>
-					</div>
-
-				</div>
-			</section>
+				</section>
 			<!-- start About me -->
 			<section class="about-me" id="about-me">
 				<div class="about-me-intro"	>
@@ -300,10 +203,13 @@
 									</textarea>
 							</li>
 						</ul>
+						<div class="error-msg"></div>
 						<button type="submit" id="submit-btn">Get in touch</button>
 					</form>
 				</div>
 			</section>
 		<script src="main.js"></script>
+		<script src="popup.js"></script>
+		<script src="form-validate.js"></script>
 	</body>
 </html>
