@@ -1,5 +1,3 @@
-/* eslint linebreak-style: ["error", "windows"] */
-/* eslint linebreak-style: ["error", "unix"] */
 const popUp = document.querySelector('.popup');
 const modal = document.querySelector('.modal');
 
