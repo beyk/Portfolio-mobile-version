@@ -97,7 +97,7 @@ for (let i = 0; i < data.length; i += 1) {
         <button type="button" id="open-me" class='see-proj see-proj-${i}'>See project</button>
       </div>
     </div>
-			<section class="detail-section">
+<section class="detail-section">
       <div class="popup">
         <div class="modal">
         <div class="modal-div-1">
