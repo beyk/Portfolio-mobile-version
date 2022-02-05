@@ -2,11 +2,6 @@
 /* eslint linebreak-style: ["error", "unix"] */
 const popUp = document.querySelector('.popup');
 const modal = document.querySelector('.modal');
-const closePopup = document.querySelector('.close-popUp');
-const projectsList = document.querySelector('.container');
-const snapshoot1Desk = document.querySelector('.snapshoot1-desk');
-const modaltitle = document.querySelector('.modal-title');
-
 
 const data = [
   {
@@ -57,7 +52,7 @@ const data = [
     desription: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     popDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
     tags: ['html', 'Ruby on rails', 'css', 'javascript'],
-    popupTags: ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstrap'], 
+    popupTags: ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstrap'],
     image: 'images/snapshoot4.png',
     desktopImage: 'images/snapshoot4-des.png',
     seeLive: 'https://github.com/beyk',
@@ -65,31 +60,26 @@ const data = [
   },
 ];
 
-
-
-function subtitleValue(i){
-  let subtitleList =[];
-  for ( let j=0 ; j< data[i].subtitle.length; j++)
-    subtitleList += `<li class="subtitle-${j}"> ${data[i].subtitle[j]} </li>`;
-   return (subtitleList);
+function subtitleValue(i) {
+  let subtitleList = [];
+  for (let j = 0; j < data[i].subtitle.length; j += 1) { subtitleList += `<li class="subtitle-${j}"> ${data[i].subtitle[j]} </li>`; }
+  return (subtitleList);
 }
 
-function tagsValue(i){
+function tagsValue(i) {
   let tagsList = [];
-  for ( let j=0 ; j< data[i].tags.length; j++)
-    tagsList += `<li class="tags-${j}"> ${data[i].tags[j]} </li>`;
-    return tagsList;
+  for (let j = 0; j < data[i].tags.length; j += 1) { tagsList += `<li class="tags-${j}"> ${data[i].tags[j]} </li>`; }
+  return tagsList;
 }
 
-function popupTagsValue(i){
+function popupTagsValue(i) {
   let tagsList = [];
-  for ( let j=0 ; j< data[i].tags.length; j++)
-    tagsList += `<li class="tool"> ${data[i].tags[j]} </li>`;
-    return tagsList;
+  for (let j = 0; j < data[i].tags.length; j += 1) { tagsList += `<li class="tool"> ${data[i].tags[j]} </li>`; }
+  return tagsList;
 }
 
 for (let i = 0; i < data.length; i += 1) {
-  document.querySelector('.container').innerHTML  += `
+  document.querySelector('.container').innerHTML += `
 <div id="work-${i}" class="work-tonic">
 <div class="snapshoot-div">
         <img src="${data[i].image}" alt="Project image" class="snapshoot"/>
@@ -111,9 +101,8 @@ for (let i = 0; i < data.length; i += 1) {
       </div>
     </div>`;
 }
-;
 
-for(let i = 0; i<data.length ; i++) {
+for (let i = 0; i < data.length; i += 1) {
   document.querySelector('.popup').innerHTML = ` <div class="modal">
   <div class="popup-header">
   <h2 class="tonic">${data[i].title}</h2>
@@ -154,9 +143,8 @@ for(let i = 0; i<data.length ; i++) {
     </div>
     </div>
   </div>
-  </div>;`
+  </div>;`;
 }
-
 
 document.addEventListener('click', (click) => {
   if (click.target.id === 'open-me') {
@@ -167,13 +155,12 @@ document.addEventListener('click', (click) => {
 
 for (let i = 0; i < data.length; i += 1) {
   document.querySelector(`.see-proj-${i}`).addEventListener('click', () => {
-    //snapshoot1Desk.src = data[i].desktopImage;
-   // modaltitle.innerHTML = data[i].title;
+    // snapshoot1Desk.src = data[i].desktopImage;
+    // modaltitle.innerHTML = data[i].title;
   });
 
-  document.querySelector(`.close-popUp`) .addEventListener('click', () => {
-     popUp.style.display = 'none';
-     modal.style.display = 'none';
-   });
-  
-   }
+  document.querySelector('.close-popUp').addEventListener('click', () => {
+    popUp.style.display = 'none';
+    modal.style.display = 'none';
+  });
+}
