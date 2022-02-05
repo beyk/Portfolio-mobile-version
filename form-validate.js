@@ -7,6 +7,7 @@ errorTxt.textContent = 'Please add your email using lower case format * e.g. use
 function emailValidation(e) {
   if (userEmail.value !== userEmail.value.toLowerCase()) {
     errorTxt.style.display = 'block';
+    userEmail.style.color = 'red';
     e.preventDefault();
   } else {
     errorTxt.style.display = 'none';
